@@ -1,9 +1,10 @@
 $(document).ready(function(){
+	// Set initial variables
 	var x = "x";
 	var o = "o";
 	var turns = 0;
 
-	//Assigm game spots to variables
+	//Assign game spots to variables
 	var spot1 = $('#spot1');
 	var spot2 = $('#spot2');
 	var spot3 = $('#spot3');
@@ -93,6 +94,7 @@ $(document).ready(function(){
 	}});
 });
 
+// Resets game board and start a new game
 function resetGame(){
 	$('#board li').text('+');
 	$('#board li').removeClass('disable');
